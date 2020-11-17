@@ -1,32 +1,22 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="container-fluid px-0" id="app">
+    <nav-bar />
     <router-view />
+    <page-footer v-if="isDesktop" />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Base from "@/components/Base";
+import NavBar from "@/components/NavBar";
+import PageFooter from "@/components/PageFooter";
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  name: "App",
+  extends: Base,
+  components: {
+    NavBar,
+    PageFooter
   }
-}
-</style>
+};
+</script>

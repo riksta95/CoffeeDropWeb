@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+  background: url("../images/coffee-beans-background.jpg") no-repeat top center;
+  background-size: contain;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 1.6rem 2.8rem 0.9rem 3.5rem;
+
+  img.main-logo {
+    width: 11.5rem;
+    max-width: 100%;
+  }
+
+  .bm-burger-bars {
+    background-color: #fff;
+  }
+
+  .bm-item-list>* {
+    display: block;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    display: block;
+    padding: 0;
+  }
+
+  a {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 400;
+
+    &.router-link-exact-active {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.recycle-content {
+  color: #fff;
+
+  .recycle-header-margin {
+    margin-top: 5rem;
+  }
+
+  .recycle-subheader-margin {
+    margin: 1.25rem 0 2.55rem 0;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  .app-image-container {
+    overflow: visible;
+  }
+}
+
+.how-it-works {
+  background-color: #fff;
+  padding: 5rem 0;
+
+  .d-flex {
+    padding-left: 3rem;
+  }
+
+  p {
+    margin: 2rem auto;
+  }
+
+  img.arrow {
+    margin-top: 4.5rem;
+    width: 4.5rem;
+  }
+}
+
+.prices {
+  background-color: #373737;
+  padding: 5rem 0 7.75rem 0;
+
+  h5 {
+    color: #fff;
+  }
+
+  h6 {
+    color: #28E7A8;
+  }
+
+  .table {
+    color: #fff;
+    font-size: 1.15rem;
+    margin-top: 1.1rem;
+    border-radius: 0.4rem;
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+
+  .table-striped > tbody > tr:nth-child(odd) > td, {
+    background-color: #4E4E4E;
+  }
+
+  .table-striped > tbody > tr:nth-child(even) > td, {
+    background-color: #626262;
+  }
+
+  .table td, {
+    border-top: 0;
+    padding: 1rem 1.35rem;
+  }
+
+  .coffee-beans {
+    position: absolute;
+    bottom: -0.75rem;
+    left: 10.5rem;
+    z-index: 1;
+  }
+}
+
+.page-footer {
+  background-color: #373737;
+  padding: 1.25rem 0 1.5rem 0;
+
+  p {
+    font-size: 0.88rem;
+    color: #fff;
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 769px) {
+  #nav {
+    li {
+      display: inline-block;
+      padding: 0 1.75rem;
+    }
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 1024px) {
+  body {
+    background-size: cover;
+    background-position: 20% 0;
+  }
+
+  #nav {
+    padding: 2.75rem 0 0.9rem 6rem;
+
+    ul {
+      padding-left: 0;
+    }
+  }
+
+  .recycle-header-margin {
+    margin-left: 6%;
+  }
+
+  .recycle-content {
+    .col-lg-4 {
+      flex: 0 0 38%;
+      max-width: 38%;
+    }
+  }
+
+  .app-mockup-margin {
+    margin-left: 0;
+  }
+
+  .how-it-works {
+    .icon-sizes {
+      width: 16.5rem;
+    }
+
+    p {
+      width: 275px;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  body {
+    background-size: contain;
+    background-position: 20% 0;
+  }
+
+  #nav {
+    padding: 1.25rem 0 0.9rem 9rem;
+
+    ul {
+      padding-left: 8rem;
+    }
+  }
+
+  .recycle-content {
+    .col-lg-4 {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+
+    .recycle-header-margin {
+      margin-top: 4%;
+      margin-left: 9%;
+    }
+
+    .app-mockup-margin {
+      margin-left: 30%;
+      width: 74%;
+    }
+  }
+
+  .how-it-works {
+    .icon-sizes {
+      width: 21.75rem;
+    }
+
+    p {
+      width: 301px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+
+  #nav {
+    .bm-burger-button {
+      top: 10px;
+      width: 50px;
+      right: 0 !important;
+    }
+
+    .line-style {
+      height: 12%;
+    }
+  }
+
+  .recycle-content {
+    .recycle-header-margin p {
+      font-size: 1.2rem;
+    }
+
+    .app-image-container {
+      overflow: hidden;
+    }
+  }
+
+  .how-it-works {
+    .icon-sizes {
+      width: 11rem;
+    }
+
+    p {
+      width: 182px;
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 321px) {
+  body {
+    background-size: cover;
+  }
+
+  #nav {
+    padding: 1.6rem 2.8rem 0.9rem 2.2rem;
+
+    .bm-burger-button {
+      top: 10px;
+      width: 50px;
+      right: 0 !important;
+    }
+
+    .line-style {
+      height: 12%;
+    }
+  }
+
+  .recycle-header-margin h2 {
+    font-size: 1.65rem;
+  }
+
+  .app-mockup-margin {
+    width: 420px;
+    position: absolute;
+    top: 15px;
+    left: -25px;
+  }
+}
+
